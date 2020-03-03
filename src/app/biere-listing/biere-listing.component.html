@@ -1,1 +1,17 @@
-<p>biere listing works!</p>
+<h2>Bières</h2>
+
+<div *ngFor="let biere of bieres">
+    <h2>
+        <a [title]="'details sur ' + biere.biere_name">
+            {{ biere.biere_name }}
+        </a>
+    </h2>
+
+    <p *ngIf="biere.biere_desc">
+        <b>Description:</b> {{ biere.biere_desc }}
+    </p>
+    <p *ngIf="biere.biere_percent">
+        <b>Pourcentage d'alcool:</b> {{ biere.biere_percent }}
+    </p>
+  
+</div>

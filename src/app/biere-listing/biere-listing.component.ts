@@ -1,10 +1,7 @@
 import { Component, Inject } from '@angular/core';
-import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 
-export interface DialogData {
-  animal: string;
-  name: string;
-}
+import { bieres } from '../bieres';
+
 
 @Component({
   selector: 'app-biere-listing',
@@ -12,6 +9,7 @@ export interface DialogData {
   styleUrls: ['./biere-listing.component.scss']
 })
 export class BiereListingComponent {
+  bieres = bieres;
 
-  constructor(public dialog: MatDialog) { }
+  constructor() { }
 }

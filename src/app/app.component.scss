@@ -1,4 +1,4 @@
-:host {
+/*:host {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-size: 14px;
     color: #333;
@@ -254,7 +254,7 @@
   }
 
 
-  /* Responsive Styles */
+  /* Responsive Styles *//*
   @media screen and (max-width: 767px) {
 
     .card-container > *:not(.circle-link) ,
@@ -283,5 +283,8 @@
       visibility: hidden;
     }
   }
-
+*/
+p {
+  font-family: Lato;
+}
   

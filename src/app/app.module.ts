@@ -11,7 +11,7 @@ import { MatInputModule } from '@angular/material/input';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
-import { Routes, RouterModule } from '@angular/router';
+import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatTableModule } from '@angular/material/table';
@@ -22,18 +22,6 @@ import { AppComponent } from './app.component';
 import { BiereToolbarComponent } from './biere-toolbar/biere-toolbar.component';
 import { BiereSidenavComponent } from './biere-sidenav/biere-sidenav.component';
 import { BiereListingComponent } from './biere-listing/biere-listing.component';
-
-const appRoutes: Routes = [
-  {
-    path: 'liste',
-    component: BiereListingComponent,
-    data: { title: 'Liste des bières' }
-  },
-  { path: '',
-    redirectTo: '/liste',
-    pathMatch: 'full'
-  }
-];
 
 @NgModule({
   declarations: [
@@ -60,7 +48,9 @@ const appRoutes: Routes = [
     HttpClientModule,
     MatProgressSpinnerModule,
     MatTableModule,
-    
+    RouterModule.forRoot([
+      { path: '', component: BiereListingComponent },
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]
