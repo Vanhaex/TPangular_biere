@@ -11,5 +11,7 @@ import { bieres } from '../bieres';
 export class BiereListingComponent {
   bieres = bieres;
 
-  constructor() { }
+  like() {
+    window.alert("Merci d'avoir aimé cette bière !");
+  }
 }
