@@ -33,9 +33,10 @@ export class BiereSidenavComponent {
 
 @Component({
   selector: 'app-popup1',
-  templateUrl: './popup1.component.html',
   styleUrls: ['./biere-sidenav.component.scss']
 })
+
+
 export class Popup1Component {
 
   constructor(

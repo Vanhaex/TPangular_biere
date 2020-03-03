@@ -15,7 +15,6 @@ import { Routes, RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatTableModule } from '@angular/material/table';
-import { InMemoryDbService } from 'angular-in-memory-web-api';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -23,7 +22,6 @@ import { AppComponent } from './app.component';
 import { BiereToolbarComponent } from './biere-toolbar/biere-toolbar.component';
 import { BiereSidenavComponent } from './biere-sidenav/biere-sidenav.component';
 import { BiereListingComponent } from './biere-listing/biere-listing.component';
-import { Biere } from './biere';
 
 const appRoutes: Routes = [
   {
@@ -58,8 +56,7 @@ const appRoutes: Routes = [
     FormsModule,
     ReactiveFormsModule,
     MatFormFieldModule,
-    AppRoutingModule, 
-    InMemoryDbService.forRoot(Biere),
+    AppRoutingModule,
     HttpClientModule,
     MatProgressSpinnerModule,
     MatTableModule,
