@@ -1,0 +1,44 @@
+.biere-sidenav-container {
+    position: absolute;
+    top: 64px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #eee;
+};
+
+.sidenav-side {
+    background-color:#303030;
+    text-align: center;
+    color: #eee;
+    width: 9rem;
+}
+
+.card-content {
+    display: flex;
+    margin-bottom: 3rem;
+}
+
+.card-biere {
+    max-width: 400px;
+    margin-left: 5rem;
+    margin-top: 5rem;
+}
+  
+.biere-header-image-1 {
+    background-image: url('https://i.pinimg.com/originals/d6/82/0d/d6820d71803f8430a13a33a5e4422d18.jpg');
+    background-size: cover;
+}
+
+.biere-header-image-2 {
+    background-image: url('https://www.claryssedranken.be/files/StaticPage/big/logo-petrus.png');
+    background-size: cover;
+}
+
+.biere-button {
+    width: 26rem;
+}
+
+.dialog-content {
+    width: 40rem;
+}
