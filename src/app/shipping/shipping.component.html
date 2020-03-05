@@ -1,0 +1,6 @@
+<h3>Infos sur les bières</h3>
+
+<div class="shipping-item" *ngFor="let shipping of shippingInfos | async">
+  <span><b>Couleur de la bière : </b>{{ shipping.biere_couleur }}</span><br>
+  <span><b>Pays d'origine : </b>{{ shipping.biere_pays}}</span>
+</div>

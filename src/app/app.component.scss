@@ -1,4 +1,4 @@
-/*:host {
+:host {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-size: 14px;
     color: #333;
@@ -254,7 +254,7 @@
   }
 
 
-  /* Responsive Styles *//*
+  /* Responsive Styles */
   @media screen and (max-width: 767px) {
 
     .card-container > *:not(.circle-link) ,
@@ -283,7 +283,7 @@
       visibility: hidden;
     }
   }
-*/
+
 p {
   font-family: Lato;
 }
@@ -292,4 +292,16 @@ p {
   margin-left: 2rem;
   margin-top: 2rem;
 }
-  
+
+.cart-item {
+  width: 100%;
+  min-width: 400px;
+  max-width: 450px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 16px 32px;
+  margin-bottom: 8px;
+  border-radius: 2px;
+  background-color: #EEEEEE;
+}

@@ -5,4 +5,7 @@
   <h4><b>Pourcentage d'alcool : </b>{{ biere.biere_percent}}%</h4>
   <p><b>Description : </b>{{ biere.biere_desc }}</p>
 
+  <button mat-raised-button color="accent" (click)="addBieres(biere)">
+    <mat-icon>favorite</mat-icon> Ajouter à ma liste
+  </button>
 </div>
