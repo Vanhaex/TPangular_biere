@@ -1,8 +1,9 @@
-<h2>Bières</h2>
+<h1>Bières</h1>
 
-<div *ngFor="let biere of bieres">
+<div *ngFor="let biere of bieres; index as biereID">
     <h2>
-        <a [title]="'details sur ' + biere.biere_name">
+        <a [routerLink]="['/bieres', biereID]" 
+           matTooltip="Cliquez pour plus de détails !">
             {{ biere.biere_name }}
         </a>
     </h2>

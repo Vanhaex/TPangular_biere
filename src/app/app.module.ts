@@ -15,7 +15,7 @@ import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatTableModule } from '@angular/material/table';
-
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -23,6 +23,7 @@ import { BiereToolbarComponent } from './biere-toolbar/biere-toolbar.component';
 import { BiereSidenavComponent } from './biere-sidenav/biere-sidenav.component';
 import { BiereListingComponent } from './biere-listing/biere-listing.component';
 import { BiereAlertsComponent } from './biere-alerts/biere-alerts.component';
+import { BiereDetailsComponent } from './biere-details/biere-details.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { BiereAlertsComponent } from './biere-alerts/biere-alerts.component';
     BiereToolbarComponent,
     BiereSidenavComponent,
     BiereListingComponent,
-    BiereAlertsComponent
+    BiereAlertsComponent,
+    BiereDetailsComponent
   ],
   imports: [
     BrowserModule,
@@ -52,7 +54,9 @@ import { BiereAlertsComponent } from './biere-alerts/biere-alerts.component';
     MatTableModule,
     RouterModule.forRoot([
       { path: '', component: BiereListingComponent },
-    ])
+      { path: 'bieres/:biereID', component: BiereDetailsComponent },
+    ]),
+    MatTooltipModule
   ],
   providers: [],
   bootstrap: [AppComponent]
