@@ -22,13 +22,15 @@ import { AppComponent } from './app.component';
 import { BiereToolbarComponent } from './biere-toolbar/biere-toolbar.component';
 import { BiereSidenavComponent } from './biere-sidenav/biere-sidenav.component';
 import { BiereListingComponent } from './biere-listing/biere-listing.component';
+import { BiereAlertsComponent } from './biere-alerts/biere-alerts.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BiereToolbarComponent,
     BiereSidenavComponent,
-    BiereListingComponent
+    BiereListingComponent,
+    BiereAlertsComponent
   ],
   imports: [
     BrowserModule,

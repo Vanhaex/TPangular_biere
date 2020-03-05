@@ -14,4 +14,8 @@ export class BiereListingComponent {
   like() {
     window.alert("Merci d'avoir aimé cette bière !");
   }
+
+  onNotify() {
+    window.alert('A consommer avec modération !');
+  }
 }
