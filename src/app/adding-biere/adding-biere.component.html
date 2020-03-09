@@ -1,0 +1,12 @@
+<label>
+    Nom de la bière :
+    <input type="text" [formControl]="biere_name">
+</label>
+
+<p>
+    Value: {{ biere_name.value }}
+</p>
+
+<p>
+    <button (click)="updateName()">changer le nom de la bière</button>
+</p>

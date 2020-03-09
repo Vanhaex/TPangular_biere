@@ -27,6 +27,7 @@ import { BiereAlertsComponent } from './biere-alerts/biere-alerts.component';
 import { BiereDetailsComponent } from './biere-details/biere-details.component';
 import { WishlistComponent } from './wishlist/wishlist.component';
 import { ShippingComponent } from './shipping/shipping.component';
+import { AddingBiereComponent } from './adding-biere/adding-biere.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { ShippingComponent } from './shipping/shipping.component';
     BiereAlertsComponent,
     BiereDetailsComponent,
     WishlistComponent,
-    ShippingComponent
+    ShippingComponent,
+    AddingBiereComponent
   ],
   imports: [
     BrowserModule,

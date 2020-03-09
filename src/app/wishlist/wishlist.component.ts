@@ -6,11 +6,12 @@ import { CartService } from '../cart.service';
   templateUrl: './wishlist.component.html',
   styleUrls: ['./wishlist.component.scss']
 })
+
 export class WishlistComponent implements OnInit {
   whishlistBieres;
 
   constructor(
-    private cartService: CartService
+    private cartService: CartService,
   ) { }
 
   ngOnInit() {
