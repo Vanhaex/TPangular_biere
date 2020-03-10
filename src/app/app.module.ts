@@ -17,6 +17,9 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatTableModule } from '@angular/material/table';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatListModule } from '@angular/material/list';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -27,7 +30,6 @@ import { BiereAlertsComponent } from './biere-alerts/biere-alerts.component';
 import { BiereDetailsComponent } from './biere-details/biere-details.component';
 import { WishlistComponent } from './wishlist/wishlist.component';
 import { ShippingComponent } from './shipping/shipping.component';
-import { AddingBiereComponent } from './adding-biere/adding-biere.component';
 
 @NgModule({
   declarations: [
@@ -39,8 +41,7 @@ import { AddingBiereComponent } from './adding-biere/adding-biere.component';
     BiereDetailsComponent,
     WishlistComponent,
     ShippingComponent,
-    AddingBiereComponent
-  ],
+    ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -63,10 +64,12 @@ import { AddingBiereComponent } from './adding-biere/adding-biere.component';
       { path: '', component: BiereListingComponent },
       { path: 'bieres/:biereID', component: BiereDetailsComponent },
       { path: 'wishlist', component: WishlistComponent },
-      { path: 'shipping', component: ShippingComponent },
+      { path: 'shipping', component: ShippingComponent }
     ]),
     MatTooltipModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    MatDividerModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

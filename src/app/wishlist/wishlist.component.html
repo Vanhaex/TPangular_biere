@@ -5,7 +5,10 @@
 </button>
 
 <div style="margin-bottom: 12px;" class="wishlist-item" *ngFor="let wishlistBiere of whishlistBieres">
-  <span><b>Nom officiel : </b>{{ wishlistBiere.biere_name }}</span><br>
-  <span><b>Pourcentage d'alcool : </b>{{ wishlistBiere.biere_percent}}%</span>
+  <mat-list>
+    <mat-list-item><span><b>Nom officiel : </b>{{ wishlistBiere.biere_name }}</span><br></mat-list-item>
+    <mat-divider></mat-divider>
+    <mat-list-item><span><b>Pourcentage d'alcool : </b>{{ wishlistBiere.biere_percent}}%</span></mat-list-item>
+  </mat-list>
 </div>
 
