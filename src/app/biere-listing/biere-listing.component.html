@@ -1,28 +1,6 @@
 <h1>Bières</h1>
 
-
-  <!--  <h2>
-        <a [routerLink]="['/bieres', biereID]" 
-           matTooltip="Cliquez pour plus de détails !">
-            
-        </a>
-    </h2>
-    <p *ngIf="biere.biere_percent">
-        <b>Pourcentage d'alcool:</b> {{ biere.biere_percent }}%
-    </p>
-    
-    <button mat-stroked-button color="primary" (click)="like()">
-        J'aime cette bière
-    </button>
-    
-    <app-biere-alerts
-        [biere]="biere"
-        (notify)="onNotify()">
-    </app-biere-alerts>-->
-
-
-
-<div *ngFor="let biere of bieres; index as biereID">
+<div class="card-container" *ngFor="let biere of bieres; index as biereID">
     <div class="card-content" >
         <mat-card class="card-biere">
         <mat-card-header>

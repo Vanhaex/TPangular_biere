@@ -1,11 +1,18 @@
-<h2>Détails sur {{ biere.biere_name }}</h2>
+<h2>Plus de détails sur {{ biere.biere_name }}</h2>
 
 <div *ngIf="biere">
-  <h3><b>Nom officiel : </b>{{ biere.biere_name }}</h3>
-  <h4><b>Pourcentage d'alcool : </b>{{ biere.biere_percent}}%</h4>
-  <p><b>Description : </b>{{ biere.biere_desc }}</p>
-
-  <button mat-raised-button color="accent" (click)="addBieres(biere)">
-    <mat-icon>favorite</mat-icon> Ajouter à ma liste
-  </button>
-</div>
+  <div class="card-content" >
+      <mat-card class="card-biere">
+      <mat-card-content>
+          <h3><b>Nom officiel : </b>{{ biere.biere_name }}</h3>
+          <h4><b>Pourcentage d'alcool : </b>{{ biere.biere_percent}}%</h4>
+          <h4><b>Description : </b>{{ biere.biere_desc }}</h4>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-raised-button color="accent" (click)="addBieres(biere)">
+          <mat-icon>favorite</mat-icon> Ajouter à ma liste
+        </button>
+      </mat-card-actions>
+      </mat-card>
+  </div>
+</div>    

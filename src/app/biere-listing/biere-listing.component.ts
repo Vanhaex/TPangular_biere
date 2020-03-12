@@ -1,4 +1,5 @@
 import { Component, Inject } from '@angular/core';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 import { bieres } from '../bieres';
 
@@ -11,11 +12,16 @@ import { bieres } from '../bieres';
 export class BiereListingComponent {
   bieres = bieres;
 
+  constructor(
+    private _snackBar: MatSnackBar
+  ) { }
+
   like() {
-    window.alert("Merci d'avoir aimé cette bière !");
+    this._snackBar.open("Merci d'avoir aimé cette bière !", 'OK', {duration: 3000});
   }
 
   onNotify() {
     window.alert('A consommer avec modération !');
   }
 }
+
