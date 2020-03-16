@@ -1,10 +1,8 @@
 import { Component, Inject } from '@angular/core';
-import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
-export interface DialogData {
-  animal: string;
-  name: string;
-}
+import { bieres } from '../bieres';
+
 
 @Component({
   selector: 'app-biere-listing',
@@ -12,6 +10,18 @@ export interface DialogData {
   styleUrls: ['./biere-listing.component.scss']
 })
 export class BiereListingComponent {
+  bieres = bieres;
 
-  constructor(public dialog: MatDialog) { }
+  constructor(
+    private _snackBar: MatSnackBar
+  ) { }
+
+  like() {
+    this._snackBar.open("Merci d'avoir aimé cette bière !", 'OK', {duration: 3000});
+  }
+
+  onNotify() {
+    window.alert('A consommer avec modération !');
+  }
 }
+

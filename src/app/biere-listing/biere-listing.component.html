@@ -1,1 +1,17 @@
-<p>biere listing works!</p>
+<h1>Bières</h1>
+
+<div class="card-container" *ngFor="let biere of bieres; index as biereID">
+    <div class="card-content" >
+        <mat-card class="card-biere">
+        <mat-card-header>
+            <mat-card-title>{{ biere.biere_name }}</mat-card-title>
+            <mat-card-subtitle>{{ biere.biere_percent }}% d'alcool</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-actions>
+            <button class="biere-button" mat-stroked-button [routerLink]="['/bieres', biereID]" matTooltip="Cliquez pour plus de détails !">Plus d'infos</button>
+            <button class="biere-button" mat-stroked-button color="primary" (click)="like()"> J'aime cette bière </button>
+            <app-biere-alerts class="biere-button" [biere]="biere"(notify)="onNotify()"></app-biere-alerts>
+        </mat-card-actions>
+        </mat-card>
+    </div>
+</div>    

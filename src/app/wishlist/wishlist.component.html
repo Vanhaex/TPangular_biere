@@ -1,0 +1,14 @@
+<h1>Liste de souhaits</h1>
+
+<button mat-raised-button color="primary" routerLink="/shipping">
+    Infos supplémentaires sur les bières
+</button>
+
+<div style="margin-bottom: 12px;" class="wishlist-item" *ngFor="let wishlistBiere of whishlistBieres">
+  <mat-list>
+    <mat-list-item><span><b>Nom officiel : </b>{{ wishlistBiere.biere_name }}</span><br></mat-list-item>
+    <mat-divider></mat-divider>
+    <mat-list-item><span><b>Pourcentage d'alcool : </b>{{ wishlistBiere.biere_percent}}%</span></mat-list-item>
+  </mat-list>
+</div>
+

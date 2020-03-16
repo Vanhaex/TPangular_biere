@@ -1,8 +1,14 @@
 mat-toolbar {
     background-color:#00da36;
     font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: space-between;
 }
 
 span {
     margin-left: 15px;
+}
+
+#btn-home:hover {
+    cursor: pointer;
 }

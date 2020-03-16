@@ -1,3 +1,13 @@
 <mat-toolbar>
-    <i class="material-icons md-24" >menu</i><span>Le houblon, c'est ma passion</span>
+    <button [routerLink]="['']" mat-icon-button aria-label="Example icon-button with a heart icon">
+        <mat-icon>home</mat-icon>
+    </button>
+    <span>Le houblon, c'est ma passion</span>
+
+    <button  mat-raised-button
+        style="right: 0px;"
+        [routerLink]="['/wishlist']" 
+        class="button fancy-button"><i 
+        class="material-icons">favorite</i> Liste de souhaits
+    </button>
 </mat-toolbar>
